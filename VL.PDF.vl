@@ -1935,7 +1935,7 @@
               <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="EPQRxdH05izPiA5pDQlJ0F" Name="Bounds" Kind="InputPin" DefaultValue="2649, -451, 1286, 1291" />
+            <Pin Id="EPQRxdH05izPiA5pDQlJ0F" Name="Bounds" Kind="InputPin" DefaultValue="1257, 58, 1286, 1291" />
             <Pin Id="QdmXxbn7MdSPxyrAapiiCX" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="GLYmpW80MCAOcAi47P8Q6I" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="RJFTFWisYRHOuG8XZymnnF" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -2239,6 +2239,33 @@
             <Pin Id="FfBaoIfHHrDMWgzMrGZYsH" Name="Y" Kind="InputPin" />
             <Pin Id="TXJP3L5zqb6QVRitA2YojB" Name="Output" Kind="StateOutputPin" />
           </Node>
+          <Node Bounds="370,1772,70,26" Id="CkXR7ht8DqFNPUR9IVYXNQ">
+            <p:NodeReference LastCategoryFullName="VL.PDF.PdfRenderer" LastDependency="VL.PDF.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="PdfRenderer" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="RenderPage" />
+            </p:NodeReference>
+            <Pin Id="DKtTkNgGTqlNKiC6PkI3IK" Name="Input" Kind="StateInputPin" />
+            <Pin Id="UzEyO7hmIZWNtjux8OA7qn" Name="PageIndex" Kind="InputPin" />
+            <Pin Id="O8lZonDXtCCNGkK23BxN6p" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="J2DFA4oL0kQLmB63YgEh8I" Name="Value" Kind="OutputPin" />
+          </Node>
+          <Pad Id="FwYD7ldSzr5QWWIzXt9mmC" Comment="PageIndex" Bounds="491,1692,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="VzPbGz0xG05NpdsLA4PZOy" Comment="" Bounds="542,1724,169,224" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="370,1837,60,26" Id="FG2B3CttoiINvfEt5BA6jJ">
+            <p:NodeReference LastCategoryFullName="VL.PDF.PdfRenderer" LastDependency="VL.PDF.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Pages" />
+            </p:NodeReference>
+            <Pin Id="IGLQBUlGfxSNVn6YypunRA" Name="Input" Kind="StateInputPin" />
+            <Pin Id="QkXdvNkcRtfLwEq3I0zGsN" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="LLK8rvOubzsLBVI5lZhTM9" Name="Values" Kind="OutputPin" />
+          </Node>
+          <Pad Id="CCtz7DCc66sP4nH4NgKYXY" Comment="Values" Bounds="545,1969,92,466" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="JNBLpcezZzJN6Ybq3jaqpz" Name="Create" />
         <Patch Id="QZkEkEPUzfxPf9q9OTIFMp" Name="Update" />
@@ -2306,6 +2333,11 @@
         <Link Id="ESsWKYrSVFgNhd44rKxAkM" Ids="KiVO62grE45QapQTpwiALA,FfBaoIfHHrDMWgzMrGZYsH" />
         <Link Id="DWiQTQwwb8aLvkkCDxgmSR" Ids="TXJP3L5zqb6QVRitA2YojB,LAGkv9VolSsOnzhchTo5YO" />
         <Link Id="HRFwGybvkufPypofrhskUi" Ids="SwAnGjy4RYwMxeev2JYNcv,H72MeCLUpusQRoqSCkLItg" />
+        <Link Id="VMrcAWEV00DPpfxeCX7WIp" Ids="BLIKKQUKUSqLEuUG9P5fQP,DKtTkNgGTqlNKiC6PkI3IK" />
+        <Link Id="Mxtmpx7Iu5xLLo8rP5OHaF" Ids="FwYD7ldSzr5QWWIzXt9mmC,UzEyO7hmIZWNtjux8OA7qn" />
+        <Link Id="LDJt2p1TnlePUgCNkJkR8X" Ids="J2DFA4oL0kQLmB63YgEh8I,VzPbGz0xG05NpdsLA4PZOy" />
+        <Link Id="JZAaNYxoM5yOEm9Q2qdjZ9" Ids="O8lZonDXtCCNGkK23BxN6p,IGLQBUlGfxSNVn6YypunRA" />
+        <Link Id="EStQJj8Cyg2O6vcnVHkKfY" Ids="LLK8rvOubzsLBVI5lZhTM9,CCtz7DCc66sP4nH4NgKYXY" />
       </Patch>
     </Node>
   </Patch>
